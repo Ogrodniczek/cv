@@ -26,31 +26,31 @@
 
 \begin{document}
 \makecvtitle
-DevOps Engineer/SCM focused on cloud computing, automation of software integration, Python programming, CI persistence, system administration and delivery process and configuration management. \\
+DevOps Engineer focused on cloud computing, automation of software integration, Python programming, system administration, delivery process and configuration management. \\
 Passionate about containers and Kubernetes.
 \newpara
-Key technologies: Python, Linux, AWS, Jenkins, Ansible, Docker.
+Key technologies: Python, Linux, AWS, Jenkins, Ansible, Docker, Kubernetes.
 
 
 \section{Experience}
-\cventry{2018.01--2018.07}{Senior DevOps Engineer}{Softserve}{}{}{
-    Taken part in a project for Danish Company for Data Ingestion team in a field of BigData. 
+\cventry{2018.01--2018.07}{Senior DevOps Software Engineer}{Softserve}{}{}{
+    Taken part in a project for Danish company for Data Ingestion team in big data field. 
 \begin{itemize}
-    \item Move services deployed manually into Chef cookbooks. 
+    \item Migrate services deployed manually into Chef cookbooks. 
     \item Support and maintain multiple Nifi instances for development team.
 \end{itemize}
 \newpara
-Technologies: Chef, AWS, Nifi, Rancher
+Technologies: Chef, AWS, Nifi, Rancher, Hadoop.
 }
 
 \cventry{2017.03--2017.12}{Senior Software Engineer}{Intive}{}{}{
     Goal of this project was to automate tasks that were performed manually, like building process, release note generation basing on multiple sources etc. Second part of the project was to perform DevOps activities (CI and Docker related) for a micro-serviced application.
 \begin{itemize}
-    \item Automation of release process – Using multiple Python libraries to achieve the goal
-    \item Improvements for CI – Docker storage optimization, pre-submit triggers improvements, introduce dynamic Jenkins slaves based on AWS
+    \item Automation of release process: Using multiple Python libraries to achieve the goal
+    \item Improvements for CI: Docker storage optimization, Gerrit's pre-submit triggers improvements, introduce dynamic Jenkins slaves based on AWS.
 \end{itemize}
 \newpara
-Technologies: Python, Jenkins, Docker, Gerrit, AWS
+Technologies: Python, Jenkins, Docker, Gerrit, AWS.
 }
 
 \cventry{2015.10--2016.10}{Technical Leader, SCM}{Nokia Solutions and Networks}%
@@ -68,7 +68,7 @@ implementing them.
     \item Secured and hardened CI environment for crucial client deliveries.
 \end{itemize}
 \newpara
-Technologies: Yocto, Python, Eucalyptus (EC2, S3), Jenkins, Docker, Kubernetes
+Technologies: Yocto, Python, Eucalyptus (EC2, S3), Jenkins, Docker, Kubernetes.
 }
 
 \cventry{2013.02--2015.09}{SCM Engineer}{Nokia Solutions and Networks}%
@@ -76,18 +76,18 @@ Technologies: Yocto, Python, Eucalyptus (EC2, S3), Jenkins, Docker, Kubernetes
 LTE SCM Team is releasing/maintaining/compiling software for LTE branch of Nokia
 products. I was assigned to Central Build Team, where we were responsible for a
 part of CI where the final product is created. Additionally, we were responsible for
-compilation of the end product and final package creation.
+compilation of the product.
 \begin{itemize}
+    \item Work with large scale CI ecosystem,
     \item Refactoring and development of new tools used in SCM,
     \item Introducing good practices in development, like TDD and OOP,
     \item Maintaining and tuning automatic building processes,
     \item Deployed Eucalyptus Cloud infrastructure in a build system,
     \item Creating and implementing new parts of Continuous Integration process,
-    \item Provided multiple Python trainings for ca. 200 people inside Nokia and outside Python
-    \item trainings at Wrocław University of Technology.
+    \item Provided multiple Python trainings for ca. 200 people inside Nokia and also Python trainings at Wrocław University of Technology.
 \end{itemize}
 \newpara
-Technologies: Python, Eucalyptus (EC2, S3), Jenkins, Bash, Make
+Technologies: Python, Eucalyptus (EC2, S3), Jenkins, Bash, Make.
 }
 
 \cventry{2012.03--2013.01}{Junior Software Engineer}{Tieto Poland}%
@@ -99,6 +99,8 @@ Technologies: Python, Eucalyptus (EC2, S3), Jenkins, Bash, Make
     \item Development and maintenance of building automation tools,
     \item Produce builds of products.
 \end{itemize}
+\newpara
+Technologies: Bash, Jenkins, Python.
 }
 
 
@@ -108,34 +110,34 @@ Technologies: Python, Eucalyptus (EC2, S3), Jenkins, Bash, Make
     Thesis: “A design of a computer network for the hosting corporation”}
 
 \section{Languages}
-\cvitemwithcomment{english}{professional working proficiency}{}
-\cvitemwithcomment{polish}{native}{}
+\cvitemwithcomment{English}{professional working proficiency}{}
+\cvitemwithcomment{Polish}{native}{}
 
 \section{Skills}
-\cvitem{administration}{Linux - RHEL and Debian based distributions, CoreOS.}
-\cvitem{scripting}{Python (advanced), Bash.}
-\cvitem{cvs}{GIT, Subversion.}
-\cvitem{cm}{Ansible, Chef.}
-\cvitem{ci}{Jenkins.}
-\cvitem{cloud computing \& virtualization}{
+\cvitem{Administration}{Linux - RHEL and Debian based distributions, CoreOS.}
+\cvitem{Scripting}{Python (advanced), Bash.}
+\cvitem{CVS}{GIT, Subversion.}
+\cvitem{CM}{Ansible, Chef.}
+\cvitem{CI}{Jenkins, TravisCI.}
+\cvitem{Cloud computing \& virtualization}{
     \begin{itemize}
         \item Amazon Web Services, Eucalyptus, RIAK (S3),
-        \item Docker.
+        \item Kubernetes, Docker.
     \end{itemize}}
-\cvitem{monitoring/logging}{.}
-\cvitem{networking}{Practical understanding of TCP/IP networks, troubleshooting, DNS.}
+\cvitem{Monitoring/logging}{ELK.}
+\cvitem{Networking}{Practical understanding of TCP/IP networks, troubleshooting, DNS.}
 
 \section{Trainings and certifications}
-\cvitem{admin}{Red Hat Certified System Administrator (10.2016, expired)}
-\cvitem{embedded}{Designing Embedded Systems with Yocto (Doulos).}
-\cvitem{training}{Train the trainers (Nokia) - 5 days long training for people providing trainings for others.}
+\cvitem{Admin}{Red Hat Certified System Administrator.}
+\cvitem{Embedded}{Designing Embedded Systems with Yocto (Doulos).}
+\cvitem{Training}{Train the trainers (Nokia) - 5 days long training for people providing trainings for others.}
 
-\ifdefstring{\lang}{pl}{
+%\ifdefstring{\lang}{pl}{
     \cfoot{\footnotesize{I hereby agree for processing the following personal information strictly for %
     the purposes of job recruitment \newline in accordance with the regulation for the protection of %
     personal data passed on 29.08.1997, Dz.U nr 133 poz. 883.}\newline\hspace{1in}{\tiny{\shortdate\today}}}
-}{
+%}{
     %   \cfoot{\tiny{\shortdate\today}}
-}
+%}
 
 \end{document}
