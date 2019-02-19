@@ -9,100 +9,133 @@
 \newcommand*{\pin}{%
     \includegraphics[height=\heightof{M}]{pin}
 }
+\newcommand{\newpara}{
+        \vskip 0.2cm
+    }
 
 \moderncvstyle{classic}
 \moderncvcolor{blue}
 \nopagenumbers{}
 \getenv[\lang]{lang}
 
-\name{Jacek}{Szubert}
-\address{\pin Berlin, Germany}
-\phone[mobile]{+48~791~379~682}
-\email{jacek.szubert@gmail.com}
-\extrainfo{\skypesymbol \href{skype:szubert.jacek}{szubert.jacek}}
-\social[linkedin]{jacek-szubert-16b76370}
+\name{Maciej}{Ogrodniczek}
+\address{\pin Wrocław, Poland}
+\phone[mobile]{+48~607~666~399}
+\email{maciej@ogrodniczek.com}
+\social[linkedin]{maciejogrodniczek}
 
 \begin{document}
 \makecvtitle
-Experienced DevOps engineer focused on system administration, cloud computing, managing infrastructure as a code, %
-automatization of software integration and delivery process and configuration management.
-\\[6pt]
-Key technologies: Linux, AWS, Docker, Ansible, Chef, basics of Puppet.
+DevOps Engineer/SCM focused on cloud computing, automation of software integration, Python programming, CI persistence, system administration and delivery process and configuration management. \\
+Passionate about containers and Kubernetes.
+\newpara
+Key technologies: Python, Linux, AWS, Jenkins, Ansible, Docker.
 
-\ifdefstring{\lang}{au}{\newline \newline In possession of an Australian visa %
-allowing to get a full time job. Available from 1.01.2017.}{}
 
 \section{Experience}
-
-\cventry{2016--still}{DevOps Engineer (freelance)}{eHealth Systems Africa}{Berlin (Germany)}{}{
-    Working on multiple projects supporting public health in Western Africa. Implementing and optimizing monitoring solutions, deployment strategies, mitigating security risks, reducing infrastructure costs.
-}
-
-\cventry{2015--2016}{DevOps Engineer}{SoftServe}{Wroclaw (Poland)}{}{
-    Developing infrastructure and CI \& CD pipelines for web services.
-}
-
-\cventry{2013--2015}{Software Integration Engineer (SCM)}{Nokia / Nokia Solutions and Networks}%
-    {Wroclaw (Poland)}{}{Technical leader for DevOps/SysAdmin teams responsible for two projects.
+\cventry{2018.01--2018.07}{Senior DevOps Engineer}{Softserve}{}{}{
+    Taken part in a project for Danish Company for Data Ingestion team in a field of BigData. 
 \begin{itemize}
-    \item Administration of physical and virtualised servers and storages.
-    \item Administration of RHEL and Debian based Linux systems, including usage of tools for automated management like Ansible.
-    \item Scripting in Bash and Python.
-    \item Developing and optimizing continous integration flows and release processes of C/C++ and Java projects.
-    \item Quality assurance - analysis using SonarQube, preparation for TL9000 audit.
-    \item Taking over a project from other company, responsible for both competence and infrastructure transfer.
+    \item Move services deployed manually into Chef cookbooks. 
+    \item Support and maintain multiple Nifi instances for development team.
+\end{itemize}
+\newpara
+Technologies: Chef, AWS, Nifi, Rancher
+}
+
+\cventry{2017.03--2017.12}{Senior Software Engineer}{Intive}{}{}{
+    Goal of this project was to automate tasks that were performed manually, like building process, release note generation basing on multiple sources etc. Second part of the project was to perform DevOps activities (CI and Docker related) for a micro-serviced application.
+\begin{itemize}
+    \item Automation of release process – Using multiple Python libraries to achieve the goal
+    \item Improvements for CI – Docker storage optimization, pre-submit triggers improvements, introduce dynamic Jenkins slaves based on AWS
+\end{itemize}
+\newpara
+Technologies: Python, Jenkins, Docker, Gerrit, AWS
+}
+
+\cventry{2015.10--2016.10}{Technical Leader, SCM}{Nokia Solutions and Networks}%
+    {}{}{
+SCM Team is releasing/maintaining/compiling software for Nokia network nodes
+hardware. I was assigned to Core Team, where we were creating concepts and
+implementing them.
+\begin{itemize}
+    \item Designing new features and tasks planning for SCM Team,
+    \item Creating own Nokia Distribution using Yocto Project,
+    \item Helping SCM Team members in troubleshooting problems in wide spectrum,
+    \item Kubernetes proof of concept in CI environment,
+    \item Assuring HA for CI environment,
+    \item Maintaining build environment and DNS servers for SCM purposes,
+    \item Secured and hardened CI environment for crucial client deliveries.
+\end{itemize}
+\newpara
+Technologies: Yocto, Python, Eucalyptus (EC2, S3), Jenkins, Docker, Kubernetes
+}
+
+\cventry{2013.02--2015.09}{SCM Engineer}{Nokia Solutions and Networks}%
+    {}{}{
+LTE SCM Team is releasing/maintaining/compiling software for LTE branch of Nokia
+products. I was assigned to Central Build Team, where we were responsible for a
+part of CI where the final product is created. Additionally, we were responsible for
+compilation of the end product and final package creation.
+\begin{itemize}
+    \item Refactoring and development of new tools used in SCM,
+    \item Introducing good practices in development, like TDD and OOP,
+    \item Maintaining and tuning automatic building processes,
+    \item Deployed Eucalyptus Cloud infrastructure in a build system,
+    \item Creating and implementing new parts of Continuous Integration process,
+    \item Provided multiple Python trainings for ca. 200 people inside Nokia and outside Python
+    \item trainings at Wrocław University of Technology.
+\end{itemize}
+\newpara
+Technologies: Python, Eucalyptus (EC2, S3), Jenkins, Bash, Make
+}
+
+\cventry{2012.03--2013.01}{Junior Software Engineer}{Tieto Poland}%
+    {}{}{
+        Part of an external Team for a Client from telecommunications industry.
+\begin{itemize}
+    \item Refactoring and development of new tools used in SCM,
+    \item Implementing new control processes to software release process,
+    \item Development and maintenance of building automation tools,
+    \item Produce builds of products.
 \end{itemize}
 }
 
-\cventry{2012}{OSS Technical Support -- internship}{Nokia Siemens Networks}{Wroclaw (Poland)}{}%
-    {Local laboratory administration, basic configuration and verification of OSS systems.}
-
-\subsection{Miscellaneous}
-\cventry{2011--still}{Administration of own web page and discussion forum}{}{}{}{}
 
 \section{Education}
-\cventry{2013--2015}{Master's degree}{Wroclaw University of Technology}{}{}{Telecommunication --- Mobile Networks.}
-\cventry{2009--2013}{Bachelor's degree}{Wroclaw University of Technology}{}{}%
-    {Electronics and Telecommunication --- Information and Communication Networks.}
-%\cventry{2009--2013}{Vocational Technical High School}{CKU}{Częstochowa}{}{Occupational safety and health.}
+\cventry{2007--2013}{Bachelor of Science degree}{Wroclaw University of Technology}{}{}%
+    {Faculty: Electronics, Department: Teleinformatics \\
+    Thesis: “A design of a computer network for the hosting corporation”}
 
 \section{Languages}
-\cvitemwithcomment{english}{professional working proficiency}{IELTS}
+\cvitemwithcomment{english}{professional working proficiency}{}
 \cvitemwithcomment{polish}{native}{}
 
 \section{Skills}
 \cvitem{administration}{Linux - RHEL and Debian based distributions, CoreOS.}
-\cvitem{scripting}{Bash, Python (including libraries like boto(3), docker-py, Flask, SQLAlchemy, basics of Django).}
+\cvitem{scripting}{Python (advanced), Bash.}
 \cvitem{cvs}{GIT, Subversion.}
-\cvitem{cm}{Ansible, Chef, basics of Puppet.}
-\cvitem{ci}{Jenkins, TravisiCI.}
+\cvitem{cm}{Ansible, Chef.}
+\cvitem{ci}{Jenkins.}
 \cvitem{cloud computing \& virtualization}{
     \begin{itemize}
-        \item Amazon Web Services (wide variety of services including development of tools running on Lambda and utilizing SQS, developing infrastructure with CloudFormation and Beanstalk, managing containers with ECS), Eucalyptus.
-        \item Citrix XenServer, VMware vSphere.
+        \item Amazon Web Services, Eucalyptus, RIAK (S3),
         \item Docker.
     \end{itemize}}
-\cvitem{monitoring}{NewRelic, Librato, CloudWatch.}
-\cvitem{networking}{Practical understanding of TCP/IP networks, configuring network elements, troubleshooting. VPCs.}
-\cvitem{rdms}{Administration of PostgreSQL, basics of SQL.}
-\cvitem{nosql \& bigdata}{Basics of administration of CouchDB and ELK stack.}
-\cvitem{code analysis}{SonarQube and related tools.}
-\cvitem{hardware}{HP Server Hardware, NetApp.}
+\cvitem{monitoring/logging}{.}
+\cvitem{networking}{Practical understanding of TCP/IP networks, troubleshooting, DNS.}
 
 \section{Trainings and certifications}
-\cvitemwithcomment{cloud computing}{AWS Certified Developer -- Associate.}{AWS-ADEV-3416}
+\cvitem{admin}{Red Hat Certified System Administrator (10.2016, expired)}
 \cvitem{embedded}{Designing Embedded Systems with Yocto (Doulos).}
-\cvitem{networking}{Cisco Certified Network Associate.}
-\cvitem{english}{IELTS general training certification (C1).}
-
-\newdateformat{mydate}{\THEDAY\ \monthname[\THEMONTH] \THEYEAR}
+\cvitem{training}{Train the trainers (Nokia) - 5 days long training for people providing trainings for others.}
 
 \ifdefstring{\lang}{pl}{
     \cfoot{\footnotesize{I hereby agree for processing the following personal information strictly for %
     the purposes of job recruitment \newline in accordance with the regulation for the protection of %
     personal data passed on 29.08.1997, Dz.U nr 133 poz. 883.}\newline\hspace{1in}{\tiny{\shortdate\today}}}
 }{
-    \cfoot{\tiny{\shortdate\today}}
+    %   \cfoot{\tiny{\shortdate\today}}
 }
 
 \end{document}
